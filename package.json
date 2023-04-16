@@ -1,0 +1,39 @@
+{
+  "name": "vander.api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "vander personal website",
+  "scripts": {
+    "init": "git submodule update --init --recursive",
+    "ci": "npm ci && npm ci --prefix ./src/plugins/editorjs/",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-graphql": "4.8.0",
+    "@strapi/plugin-i18n": "4.8.0",
+    "@strapi/plugin-users-permissions": "4.8.0",
+    "@strapi/provider-email-nodemailer": "^4.4.3",
+    "@strapi/provider-upload-cloudinary": "^4.4.0",
+    "@strapi/strapi": "4.8.0",
+    "better-sqlite3": "^8.3.0",
+    "cloudinary": "^1.32.0",
+    "hcaptcha": "^0.1.1",
+    "pg": "8.6.0",
+    "pg-connection-string": "^2.5.0",
+    "strapi-plugin-import-export-entries": "^1.18.1"
+  },
+  "author": {
+    "name": "BuildApps"
+  },
+  "strapi": {
+    "uuid": "8a321e91-20a1-4cc8-8aa0-466859a069f9"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

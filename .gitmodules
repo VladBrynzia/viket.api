@@ -1,0 +1,3 @@
+[submodule "src/plugins/editorjs"]
+	path = src/plugins/editorjs
+	url = https://buildapps-pro@dev.azure.com/buildapps-pro/Templates/_git/editorJs-carousel-plugin
