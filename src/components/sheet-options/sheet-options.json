@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sheet_options_sheet_options",
+  "info": {
+    "displayName": "sheetOptions"
+  },
+  "options": {},
+  "attributes": {
+    "pricePerMeter": {
+      "type": "decimal",
+      "required": true
+    },
+    "totalPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "listSize": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
