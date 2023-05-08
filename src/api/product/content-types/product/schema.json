@@ -115,6 +115,15 @@
       "relation": "manyToOne",
       "target": "api::products-category.products-category",
       "inversedBy": "products"
+    },
+    "characteristics": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
+      "required": true
     }
   }
 }
