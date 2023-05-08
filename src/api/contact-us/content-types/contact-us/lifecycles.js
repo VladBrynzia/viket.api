@@ -9,10 +9,9 @@ module.exports = {
         html: `
         <h1> * * * </h1>
         <div>
-          <h2>${result.fullName} sent you a new contact form.</h2>
-          <p>User name: ${result.fullName}</p>
-          <p>User email: ${result.email}</p>
-          <p>Subject: ${result.subject}</p>
+          <h2>${result.name} sent you a new contact form.</h2>
+          <p>User name: ${result.name}</p>
+          <p>User phone: ${result.phone}</p>
           <p>Message: ${result.message}</p>
           <h3>Please check the CMS system for more details!</h3>
          </div>
