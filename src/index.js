@@ -1,6 +1,6 @@
 "use strict";
 
-const verifyCaptcha = require("../config/policies/verifyCaptcha");
+// const verifyCaptcha = require("../config/policies/verifyCaptcha");
 
 module.exports = {
   /**
@@ -10,20 +10,20 @@ module.exports = {
    * This gives you an opportunity to extend code.
    */
   register({ strapi }) {
-    const extensionService = strapi.plugin("graphql").service("extension");
+    // const extensionService = strapi.plugin("graphql").service("extension");
 
-    extensionService.use({
-      resolversConfig: {
-        "Mutation.createContactUs": {
-          /**
-           * Querying the Categories content-type
-           * bypasses the authorization system.
-           */
+    // extensionService.use({
+    //   resolversConfig: {
+    //     "Mutation.createContactUs": {
+    //       /**
+    //        * Querying the Categories content-type
+    //        * bypasses the authorization system.
+    //        */
 
-          policies: [verifyCaptcha],
-        },
-      },
-    });
+    //       policies: [verifyCaptcha],
+    //     },
+    //   },
+    // });
   },
 
   /**

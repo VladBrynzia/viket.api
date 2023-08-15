@@ -1,6 +1,6 @@
 "use strict";
 
-const verifyCaptcha = require("../../../../config/policies/verifyCaptcha");
+// const verifyCaptcha = require("../../../../config/policies/verifyCaptcha");
 
 /**
  * contact-us router
