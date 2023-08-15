@@ -1,8 +1,8 @@
 {
-  "name": "vander.api",
+  "name": "viket.api",
   "private": true,
   "version": "0.1.0",
-  "description": "vander personal website",
+  "description": "viket personal website",
   "scripts": {
     "init": "git submodule update --init --recursive",
     "ci": "npm ci && npm ci --prefix ./src/plugins/editorjs/",
@@ -27,7 +27,7 @@
     "typescript": "^5.1.6"
   },
   "author": {
-    "name": "BuildApps"
+    "name": "bavdi"
   },
   "strapi": {
     "uuid": "8a321e91-20a1-4cc8-8aa0-466859a069f9"
