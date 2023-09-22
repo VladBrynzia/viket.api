@@ -23,7 +23,6 @@
     "hcaptcha": "^0.1.1",
     "pg": "8.6.0",
     "pg-connection-string": "^2.5.0",
-    "strapi-plugin-import-export-entries": "^1.18.1",
     "typescript": "^5.1.6"
   },
   "author": {
