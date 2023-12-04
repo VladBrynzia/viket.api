@@ -3,12 +3,6 @@ module.exports = ({ env }) => ({
     enabled: true,
     resolve: "src/plugins/editorjs",
   },
-  'import-export-entries': {
-    enabled: true,
-    config: {
-      // See `Config` section.
-    },
-  },
   upload: {
     config: {
       provider: "cloudinary",
