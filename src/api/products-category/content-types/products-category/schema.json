@@ -32,8 +32,7 @@
     "products": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::product.product",
-      "mappedBy": "products_category"
+      "target": "api::product.product"
     }
   }
 }

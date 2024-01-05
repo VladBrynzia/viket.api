@@ -10,57 +10,20 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "required": true
     },
     "description": {
-      "type": "text",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "type": "richtext",
+      "required": true
     },
     "haveInStock": {
       "type": "boolean",
       "default": true,
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "thickness": {
-      "type": "integer",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "color": {
-      "type": "string",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "required": true
     },
     "mainImage": {
       "type": "media",
@@ -68,61 +31,44 @@
       "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sheetOption": {
-      "displayName": "sheetOptions",
-      "type": "component",
-      "repeatable": true,
-      "component": "sheet-options.sheet-options",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      ]
     },
     "slug": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "type": "string",
       "required": true,
       "unique": true
     },
     "products_category": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::products-category.products-category",
-      "inversedBy": "products"
+      "relation": "oneToOne",
+      "target": "api::products-category.products-category"
     },
     "characteristics": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "type": "richtext",
+      "required": true
+    },
+    "productImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "policarbonSheetOptions": {
+      "displayName": "sheetOption",
+      "type": "component",
+      "repeatable": true,
+      "component": "sheet-option.sheet-option"
+    },
+    "accessoriesSheetOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sheet-option.accessories-sheet-option"
+    },
+    "topSellers": {
+      "type": "boolean",
+      "default": false,
       "required": true
     }
   }

@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_sheet_option_sheet_options",
+  "info": {
+    "displayName": "policarbonSheetOption",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "haveInStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "listSize": {
+      "type": "string",
+      "required": true
+    },
+    "warrantyText": {
+      "type": "string",
+      "required": false
+    },
+    "wholesalePriceInfo": {
+      "type": "string"
+    },
+    "totalPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "pricePerMeter": {
+      "type": "decimal",
+      "required": true
+    },
+    "thickness": {
+      "type": "decimal",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

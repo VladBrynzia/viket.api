@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_sheet_option_accessories_sheet_options",
+  "info": {
+    "displayName": "AccessoriesSheetOption",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "haveInStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "warrantyText": {
+      "type": "string"
+    },
+    "accessoriesType": {
+      "type": "enumeration",
+      "enum": [
+        "pieces",
+        "meters"
+      ],
+      "required": true
+    },
+    "wholesalePriceInfo": {
+      "type": "string"
+    },
+    "totalPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "color": {
+      "type": "string"
+    },
+    "itemLength": {
+      "type": "string"
+    }
+  }
+}
