@@ -18,6 +18,7 @@
     "@strapi/provider-email-nodemailer": "^4.4.3",
     "@strapi/provider-upload-cloudinary": "^4.4.0",
     "@strapi/strapi": "4.8.0",
+    "ajv": "^8.17.1",
     "better-sqlite3": "^8.5.0",
     "cloudinary": "^1.32.0",
     "hcaptcha": "^0.1.1",
@@ -33,7 +34,7 @@
     "uuid": "8a321e91-20a1-4cc8-8aa0-466859a069f9"
   },
   "engines": {
-    "node": ">=12.x.x <=18.x.x",
+    "node": ">=12.x.x <=20.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
